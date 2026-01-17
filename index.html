@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>RPS, la radio</title>
 
-  <!-- Police manuscrite proche du logo + texte lisible -->
   <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
@@ -40,7 +39,6 @@
       gap: 28px;
     }
 
-    /* Logo centré */
     .rps-logo {
       width: min(320px, 80vw);
       height: auto;
@@ -106,12 +104,10 @@
     }
 
     .slot {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       padding: 6px 2px;
       font-size: 0.9rem;
       border-bottom: 1px dashed rgba(10, 44, 99, 0.12);
+      line-height: 1.5;
     }
 
     .slot:last-child {
@@ -119,16 +115,9 @@
     }
 
     .slot-time {
-      font-weight: 500;
+      font-weight: 600;
       color: var(--rps-blue);
-      margin-right: 8px;
-    }
-
-    .slot-genre {
-      font-style: italic;
-      color: var(--rps-blue-soft);
-      flex: 1 1 auto;
-      text-align: right;
+      margin-right: 6px;
     }
 
     footer {
@@ -143,64 +132,87 @@
 
   <div class="page-wrap">
 
-    <!-- Logo centré contenant déjà le titre -->
     <img src="logo-RPS-la-radio.jpg" alt="Logo RPS, la radio" class="rps-logo">
 
     <main>
 
-      <!-- Carte player -->
       <section class="player-card">
         <p class="player-caption">
           Clique sur lecture pour rejoindre le journal de bord sonore du voyage Paris&nbsp;&rarr;&nbsp;Samarcande.
         </p>
 
-<audio controls preload="none" style="width:100%;">
-  <source src="https://radio4.pro-fhi.net/listen-rfiwlady-stream.mp3" type="audio/mpeg">
-  Votre navigateur ne supporte pas l’élément audio.
-</audio>
-
+        <audio controls preload="none" style="width:100%;">
+          <source src="https://radio4.pro-fhi.net/listen-rfiwlady-stream.mp3" type="audio/mpeg">
+          Votre navigateur ne supporte pas l’élément audio.
+        </audio>
       </section>
 
-      <!-- Carte programmation -->
+      <!-- Nouvelle programmation -->
       <section class="schedule-card">
         <h2 class="schedule-title">Programmation</h2>
 
-        <p class="schedule-intro">
-          La journée sur RPS, la radio suit le rythme du voyage&nbsp;: musiques pour lancer la route,
-          bandes-son pour les grands espaces, et balades plus douces à la nuit tombée.
-        </p>
-
         <div class="schedule-grid">
           <div class="slot">
-            <span class="slot-time">06h&nbsp;&ndash;&nbsp;09h</span>
-            <span class="slot-genre">Template&nbsp;: réveil en douceur &mdash; folk, indie acoustique, ambient.</span>
+            <span class="slot-time">5h&nbsp;&ndash;&nbsp;7h.</span>
+            Réveil. Un oiseau chante, il est temps de lever les paupières.
           </div>
           <div class="slot">
-            <span class="slot-time">09h&nbsp;&ndash;&nbsp;12h</span>
-            <span class="slot-genre">Template&nbsp;: musique de route &mdash; rock léger, soul, classics 60–80s.</span>
+            <span class="slot-time">7h&nbsp;&ndash;&nbsp;8h.</span>
+            Petit déj. Du café, une tartine, un brin de musique, une orange. Est-ce que ça serait pas le meilleur moment de la journée&nbsp;?
           </div>
           <div class="slot">
-            <span class="slot-time">12h&nbsp;&ndash;&nbsp;16h</span>
-            <span class="slot-genre">Template&nbsp;: horizons lointains &mdash; musiques du monde, jazz, instrumentaux.</span>
+            <span class="slot-time">8h&nbsp;&ndash;&nbsp;9h.</span>
+            Départ. Le ventre est plein, la route est longue.
           </div>
           <div class="slot">
-            <span class="slot-time">16h&nbsp;&ndash;&nbsp;19h</span>
-            <span class="slot-genre">Template&nbsp;: énergie de fin d’étape &mdash; pop, rock plus dynamique, morceaux cultes.</span>
+            <span class="slot-time">10h&nbsp;&ndash;&nbsp;12h.</span>
+            Le jus du matin. C'est dur, ça monte, mais qu'à cela ne tienne&nbsp;: tu cherchais l'aventure, la voilà.
           </div>
           <div class="slot">
-            <span class="slot-time">19h&nbsp;&ndash;&nbsp;22h</span>
-            <span class="slot-genre">Template&nbsp;: veillées de bivouac &mdash; folk intimiste, chansons à texte, piano.</span>
+            <span class="slot-time">12h&nbsp;&ndash;&nbsp;13h.</span>
+            1h de Georges Brassens.
           </div>
           <div class="slot">
-            <span class="slot-time">22h&nbsp;&ndash;&nbsp;06h</span>
-            <span class="slot-genre">Template&nbsp;: nuit sur la steppe &mdash; ambient, paysages sonores, rediffusions de journaux de bord.</span>
+            <span class="slot-time">13h&nbsp;&ndash;&nbsp;14h.</span>
+            Remise en selle.
+          </div>
+          <div class="slot">
+            <span class="slot-time">14h&nbsp;&ndash;&nbsp;16h.</span>
+            Après-midi dans le dur.
+          </div>
+          <div class="slot">
+            <span class="slot-time">16h&nbsp;&ndash;&nbsp;18h.</span>
+            Le soir tombe, on se rapproche.
+          </div>
+          <div class="slot">
+            <span class="slot-time">18h&nbsp;&ndash;&nbsp;19h.</span>
+            Apéro. Donnez-moi une bière Beaufays et les meilleures chansons de Jacques Brel.
+          </div>
+          <div class="slot">
+            <span class="slot-time">19h&nbsp;&ndash;&nbsp;20h.</span>
+            Dîner. L'heure des siècles révolus.
+          </div>
+          <div class="slot">
+            <span class="slot-time">20h&nbsp;&ndash;&nbsp;22h.</span>
+            Veillée. Un feu de bois, une cigarette, un encensoir. On se remémore, on s'épanche, on se perd dans les vieilles histoires.
+          </div>
+          <div class="slot">
+            <span class="slot-time">23h&nbsp;&ndash;&nbsp;minuit.</span>
+            Berceuse.
+          </div>
+          <div class="slot">
+            <span class="slot-time">Minuit&nbsp;&ndash;&nbsp;1h.</span>
+            Minuit sonne, monde nouveau.
+          </div>
+          <div class="slot">
+            <span class="slot-time">1h&nbsp;&ndash;&nbsp;3h.</span>
+            On fait ce qu'on sait faire de mieux.
+          </div>
+          <div class="slot">
+            <span class="slot-time">3h&nbsp;&ndash;&nbsp;5h.</span>
+            Insomniaque. Les regrets du passé bataillent avec les rêves d'avenir. C'est l'heure de tous les tourments et de toutes les épiphanies.
           </div>
         </div>
-
-        <p class="schedule-outro">
-          Ces créneaux sont un canevas&nbsp;: la programmation réelle évoluera au fil de la route,
-          des rencontres et de l’humeur du jour.
-        </p>
       </section>
 
     </main>
