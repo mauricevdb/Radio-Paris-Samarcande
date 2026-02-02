@@ -71,6 +71,13 @@
       color: var(--rps-blue-soft);
     }
 
+    .now-playing {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: var(--rps-blue-soft);
+    }
+
     .schedule-card {
       width: 100%;
       background: transparent;
@@ -138,13 +145,21 @@
 
       <section class="player-card">
         <p class="player-caption">
-          Clique sur lecture pour rejoindre le journal de bord sonore du voyage Paris&nbsp;&rarr;&nbsp;Samarcande.
+          Clique sur Lecture pour rejoindre le journal de bord musical du voyage. Tu pourras aussi me surprendre pendant que je raconte ma vie en live !
         </p>
 
         <audio controls preload="none" style="width:100%;">
           <source src="https://radio4.pro-fhi.net/listen-rfiwlady-stream.mp3" type="audio/mpeg">
           Votre navigateur ne supporte pas l’élément audio.
         </audio>
+
+        <!-- Now playing -->
+        <p class="now-playing">
+          En ce moment :
+          <span class="cc_streaminfo" data-type="song" data-username="rfiwlady">
+            Chargement ...
+          </span>
+        </p>
       </section>
 
       <!-- Nouvelle programmation -->
@@ -230,6 +245,9 @@
     </footer>
 
   </div>
+
+  <!-- Script widget hébergeur : à laisser exactement ainsi -->
+  <script language="javascript" type="text/javascript" src="https://radio.pro-fhi.net:2199/system/streaminfo.js"></script>
 
 </body>
 </html>
